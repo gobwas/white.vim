@@ -11,7 +11,7 @@ if exists("syntax_on")
     syntax reset
 endif
 
-let colors_name = "go"
+let colors_name = "white"
 
 function! SynStack()
 	if !exists("*synstack")
