@@ -71,9 +71,7 @@ if &background == "light"
   hi Error        cterm=NONE          ctermbg=15      ctermfg=9
 
   "hi SpellBad     cterm=NONE          ctermbg=224     ctermfg=160
-  "hi ALEErrorSign cterm=NONE          ctermbg=224     ctermfg=160
   hi SpellBad     cterm=underline          ctermbg=NONE     ctermfg=160
-  hi ALEErrorSign cterm=underline          ctermbg=NONE     ctermfg=160
 
   hi Todo         cterm=NONE          ctermbg=NONE    ctermfg=81
   hi MatchParen   cterm=underline     ctermbg=255     ctermfg=0
@@ -133,6 +131,20 @@ if &background == "light"
   hi markdownLink              cterm=NONE      ctermbg=NONE ctermfg=250
   hi markdownLinkDelimiter     cterm=NONE      ctermbg=NONE ctermfg=250
   hi markdownUrl               cterm=NONE      ctermbg=NONE ctermfg=250
+  " }}}
+ 
+  " ALE {{{
+  hi ALEInfo              cterm=NONE ctermbg=NONE ctermfg=NONE
+  hi ALEInfoLine          cterm=NONE ctermbg=NONE ctermfg=NONE
+  hi ALEInfoSign          cterm=NONE ctermbg=NONE ctermfg=NONE
+
+  hi ALEWarning           cterm=bold ctermbg=NONE ctermfg=97
+  hi ALEWarningLine       cterm=NONE ctermbg=NONE ctermfg=NONE
+  hi ALEWarningSign       cterm=NONE ctermbg=NONE ctermfg=97
+
+  hi ALEError             cterm=bold ctermbg=NONE ctermfg=9
+  hi ALEErrorLine         cterm=NONE ctermbg=NONE ctermfg=NONE
+  hi ALEErrorSign         cterm=NONE ctermbg=NONE ctermfg=9
   " }}}
   
 
