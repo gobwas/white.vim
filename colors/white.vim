@@ -147,6 +147,10 @@ if &background == "light"
   hi ALEErrorSign         cterm=NONE ctermbg=NONE ctermfg=9
   " }}}
   
+  " JSON {{{
+  #hi jsonTrailingCommaError cterm=bold ctermbg=NONE ctermfg=9
+  " }}}
+  
 
 else
   hi Normal       cterm=NONE          ctermbg=233     ctermfg=250
@@ -189,7 +193,7 @@ else
   hi Ignore       cterm=NONE                          ctermfg=NONE
   hi String       cterm=NONE                          ctermfg=72
   hi ErrorMsg     cterm=NONE          ctermbg=NONE    ctermfg=9
-  hi Error        cterm=NONE          ctermbg=NONE    ctermfg=NONE
+  hi Error        cterm=NONE          ctermbg=NONE    ctermfg=9
   "hi SpellBad     cterm=NONE          ctermbg=160     ctermfg=225
   hi SpellBad     cterm=underline          ctermbg=NONE     ctermfg=9
   hi ALEErrorSign cterm=NONE ctermbg=NONE ctermfg=9
@@ -201,8 +205,6 @@ else
   hi TabLineSel   cterm=NONE      ctermbg=233 ctermfg=31
   hi TabLine	  cterm=underline ctermbg=234 ctermfg=251
   hi TabLineFill  cterm=NONE      ctermbg=235 ctermfg=0
-
-  hi clear Error
 
   " Vim {{{
   hi vimLineComment cterm=NONE ctermbg=NONE ctermfg=242
