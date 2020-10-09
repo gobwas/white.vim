@@ -146,9 +146,13 @@ if &background == "light"
   hi ALEErrorLine         cterm=NONE ctermbg=NONE ctermfg=NONE
   hi ALEErrorSign         cterm=NONE ctermbg=NONE ctermfg=9
   " }}}
-  
+
   " JSON {{{
-  #hi jsonTrailingCommaError cterm=bold ctermbg=NONE ctermfg=9
+  hi jsonTrailingCommaError cterm=bold ctermbg=NONE ctermfg=9
+  " }}}
+
+  " LSP {{{
+  hi lspReference cterm=NONE ctermbg=NONE ctermfg=green
   " }}}
   
 
