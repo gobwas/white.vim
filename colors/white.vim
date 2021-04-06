@@ -66,7 +66,7 @@ if &background == "light"
   hi Identifier   cterm=NONE                          ctermfg=NONE
   hi Statement    cterm=NONE                          ctermfg=NONE
   hi Ignore       cterm=NONE                          ctermfg=NONE
-  hi String       cterm=NONE                          ctermfg=24
+  hi String       cterm=NONE                          ctermfg=72
   hi ErrorMsg     cterm=NONE          ctermbg=15      ctermfg=9
   hi Error        cterm=NONE          ctermbg=15      ctermfg=9
 
