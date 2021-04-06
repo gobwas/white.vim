@@ -14,16 +14,16 @@ endif
 let colors_name = "white"
 
 function! SynStack()
-	if !exists("*synstack")
-		return
-	endif
-	echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+    if !exists("*synstack")
+        return
+    endif
+    echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
 function! SynStackFG()
-	if !exists("*synstack")
-		return
-	endif
-	echo synIDattr(synIDtrans(synID(line("."), col("."), 1)), "fg")
+    if !exists("*synstack")
+        return
+    endif
+    echo synIDattr(synIDtrans(synID(line("."), col("."), 1)), "fg")
 endfunc
 
 
@@ -69,33 +69,30 @@ if &background == "light"
   hi String       cterm=NONE                          ctermfg=72
   hi ErrorMsg     cterm=NONE          ctermbg=15      ctermfg=9
   hi Error        cterm=NONE          ctermbg=15      ctermfg=9
-
-  "hi SpellBad     cterm=NONE          ctermbg=224     ctermfg=160
-  hi SpellBad     cterm=underline          ctermbg=NONE     ctermfg=160
-
+  hi SpellBad     cterm=underline     ctermbg=NONE    ctermfg=160
   hi Todo         cterm=NONE          ctermbg=NONE    ctermfg=81
   hi MatchParen   cterm=underline     ctermbg=255     ctermfg=0
   hi ColorColumn                                      ctermbg=255
   hi EndOfBuffer  cterm=NONE                          ctermfg=252
-  
-  hi TabLineSel   cterm=NONE ctermbg=white ctermfg=81
-  hi TabLine	  cterm=underline ctermbg=251 ctermfg=234
-  hi TabLineFill  cterm=NONE ctermbg=238 ctermfg=238
+
+  hi TabLineSel   cterm=NONE      ctermbg=white ctermfg=81
+  hi TabLine      cterm=underline ctermbg=251   ctermfg=234
+  hi TabLineFill  cterm=NONE      ctermbg=238   ctermfg=238
 
   " Vim {{{
   hi vimLineComment cterm=NONE ctermbg=NONE ctermfg=250
   " }}}
-  
+
   " NERDTree {{{
   hi NERDTreeDir            cterm=NONE ctermbg=NONE ctermfg=25
   hi NERDTreeOpenable       cterm=NONE ctermbg=NONE ctermfg=NONE
   hi NERDTreeNodeDelimiters cterm=NONE ctermbg=NONE ctermfg=NONE
   " }}}
-  
+
   " Mail {{{
   hi mailSignature cterm=NONE ctermbg=NONE ctermfg=22
   " }}}
-  
+
   " 61 SlateBlue3
   " 68 SteelBlue3
   " 81 SteelBlue1
@@ -132,7 +129,7 @@ if &background == "light"
   hi markdownLinkDelimiter     cterm=NONE      ctermbg=NONE ctermfg=250
   hi markdownUrl               cterm=NONE      ctermbg=NONE ctermfg=250
   " }}}
- 
+
   " ALE {{{
   hi ALEInfo              cterm=NONE ctermbg=NONE ctermfg=NONE
   hi ALEInfoLine          cterm=NONE ctermbg=NONE ctermfg=NONE
@@ -154,7 +151,6 @@ if &background == "light"
   " LSP {{{
   hi lspReference cterm=NONE ctermbg=NONE ctermfg=green
   " }}}
-  
 
 else
   hi Normal       cterm=NONE          ctermbg=233     ctermfg=250
@@ -198,32 +194,30 @@ else
   hi String       cterm=NONE                          ctermfg=72
   hi ErrorMsg     cterm=NONE          ctermbg=NONE    ctermfg=9
   hi Error        cterm=NONE          ctermbg=NONE    ctermfg=9
-  "hi SpellBad     cterm=NONE          ctermbg=160     ctermfg=225
-  hi SpellBad     cterm=underline          ctermbg=NONE     ctermfg=9
-  hi ALEErrorSign cterm=NONE ctermbg=NONE ctermfg=9
+  hi SpellBad     cterm=underline     ctermbg=NONE    ctermfg=9
   hi Todo         cterm=NONE          ctermbg=NONE    ctermfg=81
   hi MatchParen   cterm=underline     ctermbg=238     ctermfg=NONE
   hi ColorColumn                      ctermbg=255
   hi EndOfBuffer  cterm=NONE                          ctermfg=238
 
   hi TabLineSel   cterm=NONE      ctermbg=233 ctermfg=31
-  hi TabLine	  cterm=underline ctermbg=234 ctermfg=251
+  hi TabLine      cterm=underline ctermbg=234 ctermfg=251
   hi TabLineFill  cterm=NONE      ctermbg=235 ctermfg=0
 
   " Vim {{{
   hi vimLineComment cterm=NONE ctermbg=NONE ctermfg=242
   " }}}
-  
+
   " NERDTree {{{
   hi NERDTreeDir            cterm=NONE ctermbg=NONE ctermfg=81
   hi NERDTreeOpenable       cterm=NONE ctermbg=NONE ctermfg=NONE
   hi NERDTreeNodeDelimiters cterm=NONE ctermbg=NONE ctermfg=NONE
   " }}}
-  
+
   " Mail {{{
   hi mailSignature cterm=NONE ctermbg=NONE ctermfg=22
   " }}}
-  
+
   " 61 SlateBlue3
   " 68 SteelBlue3
   " 81 SteelBlue1
@@ -240,11 +234,49 @@ else
   hi goUnsignedInts          cterm=NONE ctermbg=NONE ctermfg=242
   hi goSignedInts            cterm=NONE ctermbg=NONE ctermfg=242
   hi goPredefinedIdentifiers cterm=NONE ctermbg=NONE ctermfg=242
-
   hi goDecimalInt            cterm=NONE ctermbg=NONE ctermfg=254
   hi goHexadecimalInt        cterm=NONE ctermbg=NONE ctermfg=254
+  " }}}
 
-  "hi SpellBad cterm=NONE ctermbg=1 ctermfg=1
+  " Markdown {{{
+  hi markdownH1                cterm=NONE      ctermbg=255 ctermfg=238
+  hi markdownH1Delimiter       cterm=NONE      ctermbg=255 ctermfg=238
+  hi markdownH2                cterm=NONE      ctermbg=255 ctermfg=238
+  hi markdownH2Delimiter       cterm=NONE      ctermbg=255 ctermfg=238
+  hi markdownH3                cterm=NONE      ctermbg=255 ctermfg=238
+  hi markdownH3Delimiter       cterm=NONE      ctermbg=255 ctermfg=238
 
-  "hi shCommandSub cterm=NONE ctermbg=NONE ctermfg=NONE
+  hi markdownItalic            cterm=NONE      ctermbg=NONE ctermfg=61
+  hi markdownBold              cterm=NONE      ctermbg=NONE ctermfg=61
+  hi markdownCode              cterm=NONE      ctermbg=NONE ctermfg=244
+  hi markdownId                cterm=NONE      ctermbg=NONE ctermfg=250
+  hi markdownIdDelimiter       cterm=NONE      ctermbg=NONE ctermfg=250
+  hi markdownLinkText          cterm=underline ctermbg=NONE ctermfg=61
+  hi markdownLinkTextDelimiter cterm=NONE      ctermbg=NONE ctermfg=61
+  hi markdownLink              cterm=NONE      ctermbg=NONE ctermfg=250
+  hi markdownLinkDelimiter     cterm=NONE      ctermbg=NONE ctermfg=250
+  hi markdownUrl               cterm=NONE      ctermbg=NONE ctermfg=250
+  " }}}
+
+  " ALE {{{
+  hi ALEInfo              cterm=NONE ctermbg=NONE ctermfg=NONE
+  hi ALEInfoLine          cterm=NONE ctermbg=NONE ctermfg=NONE
+  hi ALEInfoSign          cterm=NONE ctermbg=NONE ctermfg=NONE
+
+  hi ALEWarning           cterm=bold ctermbg=NONE ctermfg=97
+  hi ALEWarningLine       cterm=NONE ctermbg=NONE ctermfg=NONE
+  hi ALEWarningSign       cterm=NONE ctermbg=NONE ctermfg=97
+
+  hi ALEError             cterm=bold ctermbg=NONE ctermfg=9
+  hi ALEErrorLine         cterm=NONE ctermbg=NONE ctermfg=NONE
+  hi ALEErrorSign         cterm=NONE ctermbg=NONE ctermfg=9
+  " }}}
+
+  " JSON {{{
+  hi jsonTrailingCommaError cterm=bold ctermbg=NONE ctermfg=9
+  " }}}
+
+  " LSP {{{
+  hi lspReference cterm=NONE ctermbg=NONE ctermfg=green
+  " }}}
 endif
