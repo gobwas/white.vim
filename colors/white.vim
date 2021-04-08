@@ -156,7 +156,7 @@ else
   hi Normal       cterm=NONE          ctermbg=233     ctermfg=250
   hi SignColumn   cterm=NONE          ctermbg=233     ctermfg=250
   hi SpecialKey   cterm=NONE                          ctermfg=NONE
-  hi IncSearch    cterm=NONE                          ctermfg=NONE
+  hi IncSearch    cterm=NONE          ctermbg=25      ctermfg=NONE
   hi Search       cterm=NONE          ctermbg=255     ctermfg=0
   hi MoreMsg      cterm=NONE                          ctermfg=NONE
   hi ModeMsg      cterm=NONE                          ctermfg=NONE
