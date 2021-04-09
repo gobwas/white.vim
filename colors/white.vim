@@ -28,8 +28,8 @@ endfunc
 
 
 if &background == "light"
-  hi Normal       cterm=NONE          ctermbg=white   ctermfg=238
-  hi SignColumn   cterm=NONE          ctermbg=white   ctermfg=238
+  hi Normal       cterm=NONE          ctermbg=white   ctermfg=236
+  hi SignColumn   cterm=NONE          ctermbg=white   ctermfg=236
   hi SpecialKey   cterm=NONE                          ctermfg=NONE
   hi IncSearch    cterm=NONE          ctermbg=81      ctermfg=255
   hi Search       cterm=NONE          ctermbg=0       ctermfg=255
@@ -77,7 +77,7 @@ if &background == "light"
 
   hi TabLineSel   cterm=NONE      ctermbg=white ctermfg=81
   hi TabLine      cterm=underline ctermbg=251   ctermfg=234
-  hi TabLineFill  cterm=NONE      ctermbg=238   ctermfg=238
+  hi TabLineFill  cterm=NONE      ctermbg=236   ctermfg=236
 
   " Vim {{{
   hi vimLineComment cterm=NONE ctermbg=NONE ctermfg=250
@@ -128,6 +128,14 @@ if &background == "light"
   hi markdownLink              cterm=NONE      ctermbg=NONE ctermfg=250
   hi markdownLinkDelimiter     cterm=NONE      ctermbg=NONE ctermfg=250
   hi markdownUrl               cterm=NONE      ctermbg=NONE ctermfg=250
+  " }}}
+
+  " Typescript {{{
+  hi typescriptClassKeyword   cterm=NONE ctermbg=NONE ctermfg=244
+  hi typescriptVariable       cterm=NONE ctermbg=NONE ctermfg=244
+  hi typescriptOperator       cterm=NONE ctermbg=NONE ctermfg=240
+  hi typescriptPredefinedType cterm=NONE ctermbg=NONE ctermfg=240
+  hi typescriptNumber         cterm=NONE ctermbg=NONE ctermfg=240
   " }}}
 
   " ALE {{{
@@ -256,6 +264,14 @@ else
   hi markdownLink              cterm=NONE      ctermbg=NONE ctermfg=250
   hi markdownLinkDelimiter     cterm=NONE      ctermbg=NONE ctermfg=250
   hi markdownUrl               cterm=NONE      ctermbg=NONE ctermfg=250
+  " }}}
+
+  " Typescript {{{
+  hi typescriptClassKeyword   cterm=NONE ctermbg=NONE ctermfg=246
+  hi typescriptVariable       cterm=NONE ctermbg=NONE ctermfg=246
+  hi typescriptOperator       cterm=NONE ctermbg=NONE ctermfg=242
+  hi typescriptPredefinedType cterm=NONE ctermbg=NONE ctermfg=242
+  hi typescriptNumber         cterm=NONE ctermbg=NONE ctermfg=242
   " }}}
 
   " ALE {{{
