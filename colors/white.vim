@@ -135,7 +135,9 @@ if &background == "light"
   hi typescriptVariable       cterm=NONE ctermbg=NONE ctermfg=244
   hi typescriptOperator       cterm=NONE ctermbg=NONE ctermfg=240
   hi typescriptPredefinedType cterm=NONE ctermbg=NONE ctermfg=240
-  hi typescriptNumber         cterm=NONE ctermbg=NONE ctermfg=240
+  " NOTE: TypeScript currently doesn't work well with hex numbers (highlights
+  " only digits).
+  "hi typescriptNumber         cterm=NONE ctermbg=NONE ctermfg=240
   " }}}
 
   " ALE {{{
@@ -271,7 +273,9 @@ else
   hi typescriptVariable       cterm=NONE ctermbg=NONE ctermfg=246
   hi typescriptOperator       cterm=NONE ctermbg=NONE ctermfg=242
   hi typescriptPredefinedType cterm=NONE ctermbg=NONE ctermfg=242
-  hi typescriptNumber         cterm=NONE ctermbg=NONE ctermfg=242
+  " NOTE: TypeScript currently doesn't work well with hex numbers (highlights
+  " only digits).
+  "hi typescriptNumber         cterm=NONE ctermbg=NONE ctermfg=242
   " }}}
 
   " ALE {{{
