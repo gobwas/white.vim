@@ -108,6 +108,7 @@ if &background == "light"
   hi goUnsignedInts          cterm=NONE ctermbg=NONE ctermfg=240
   hi goSignedInts            cterm=NONE ctermbg=NONE ctermfg=240
   hi goPredefinedIdentifiers cterm=NONE ctermbg=NONE ctermfg=240
+  hi goCharacter             cterm=NONE ctermbg=NONE ctermfg=72
   " }}}
 
   " Markdown {{{
@@ -246,6 +247,7 @@ else
   hi goPredefinedIdentifiers cterm=NONE ctermbg=NONE ctermfg=242
   hi goDecimalInt            cterm=NONE ctermbg=NONE ctermfg=254
   hi goHexadecimalInt        cterm=NONE ctermbg=NONE ctermfg=254
+  hi goCharacter             cterm=NONE ctermbg=NONE ctermfg=72
   " }}}
 
   " Markdown {{{
